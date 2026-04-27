@@ -10,7 +10,7 @@
 
 <div class=" flex justify-between p-3">
 	<div class="flex">
-		<button class="hover:bg-amber-100 rounded-full">
+		<button class="hover:bg-pink-100 rounded-full">
 			<span class="material-symbols-outlined m-2"> menu </span>
 		</button>
 		<img
@@ -27,13 +27,13 @@
 				class="border-1 border-gray-500 rounded-l-full w-120 h-10"
 			/>
 			<button
-				class="border-1 border-gray-500 rounded-r-full w-10 h-10 pt-1.5 hover:bg-amber-100"
+				class="border-1 border-gray-500 rounded-r-full w-10 h-10 pt-1.5 hover:bg-pink-100"
 			>
 				<span class="material-symbols-outlined"> search </span>
 			</button>
 		</div>
 		<button
-			class="rounded-full hover:bg-amber-100 p-1.5 flex items-center bg-gray-100"
+			class="rounded-full hover:bg-pink-100 p-1.5 flex items-center bg-gray-100"
 		>
 			<span class="material-symbols-outlined"> mic </span>
 		</button>
@@ -41,14 +41,14 @@
 	<div class="flex items-center gap-3">
 		<button
 			class="flex w-10px rounded-full p-1.5 pr-3
-		 hover:bg-amber-100 bg-gray-100"
+		 hover:bg-pink-100 bg-gray-100"
 		>
 			<span class="material-symbols-outlined"> add</span>
 			<span class=""> Create</span>
 		</button>
 		<button>
 			<span
-				class="material-symbols-outlined rounded-full p-1.5 hover:bg-amber-100"
+				class="material-symbols-outlined rounded-full p-1.5 hover:bg-pink-100"
 			>
 				notifications
 			</span>
@@ -62,19 +62,19 @@
 </div>
 <div class="grid grid-cols-[0.5fr_20fr] h-screen">
 	<div class="flex flex-col">
-		<button class="hover:bg-amber-100 rounded-md size-15">
+		<button class="hover:bg-pink-100 rounded-md size-15">
 			<span class="material-symbols-outlined pt-0.5"> home </span>
 			<p class="text-[10px] mt-[-5px]">Home</p>
 		</button>
-		<button class="hover:bg-amber-100 rounded-md size-15">
+		<button class="hover:bg-pink-100 rounded-md size-15">
 			<span class="material-symbols-outlined"> mobile_hand_left </span>
 			<p class="text-[10px] mt-[-5px]">Shorts</p>
 		</button>
-		<button class="hover:bg-amber-100 rounded-md size-15">
+		<button class="hover:bg-pink-100 rounded-md size-15">
 			<span class="material-symbols-outlined"> subscriptions </span>
 			<p class="text-[10px] mt-[-5px] ml-[2px]">Subscriptions</p>
 		</button>
-		<button class="hover:bg-amber-100 rounded-md size-15">
+		<button class="hover:bg-pink-100 rounded-md size-15">
 			<span class="material-symbols-outlined"> account_circle </span>
 			<p class="text-[10px] mt-[-5px]">you</p>
 		</button>

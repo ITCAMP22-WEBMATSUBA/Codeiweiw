@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 100px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            padding: 50px;
+        }
+
+        button {
+            font-size: 30px;
+            margin: 5px;
+        }
+
+        #input {
+            font-size: 50px;
+            margin: 5px;
+        }
+
+        p {
+            font-size: 80px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        #button {
+            background-color: red;
+            font-size: 50px;
+            margin: 5px;
+        }
+
+        .check {
+            width: 50px;
+            height: 50px;
+            margin-top: 35px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>To Do List</h1>
+    <div class="container">
+        <input type="text" id="input" name="input"><br>
+
+        <button onclick="saveAndLoad()">Submit</button>
+    </div>
+    <p id="myList">
+    </p>
+    
+</body>
+
+</html>
+<script>
+    const task = JSON.parse(localStorage.getItem("task"))||[]
+    const input = document.getElementById("input")
+    task.forEach(Element => {
+        console.log(Element)
+        submit(Element)
+    });
+function saveAndLoad() {
+    const value = input.value
+    task.push(value)
+    
+    localStorage.setItem("task" , JSON.stringify(task))
+
+    submit(value)
+    // Create an "li" node:
+}
+function submit(name){
+    const node = document.createElement("p");
+    const button = document.createElement("button")
+    const check = document.createElement("input")
+    button.appendChild(document.createTextNode("delete"))
+    button.style.backgroundColor = "red"
+    button.style.fontSize = "50px"
+    button.style.padding = "15px"
+    button.style.margin = "15px"
+    button.onclick = function delete2(){
+        node.remove()
+    }
+    check.type = "checkbox"
+    check.style.width ="100px"
+    check.style.height ="50px"
+    // Create a text node:
+    const textnode = document.createTextNode(name);
+    
+    // Append the text node to the "li" node:
+    node.appendChild(check);
+    node.appendChild(textnode);
+    node.appendChild(button);
+    
+    
+    
+    // Append the "li" node to the list:
+    document.getElementById("myList").appendChild(node);
+    
+    }
+</script>
